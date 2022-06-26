@@ -34,7 +34,7 @@ def index():
     # display new feed
 
 
-@app.route("/login" methods=["POST","GET"])
+@app.route("/login", methods=["POST","GET"])
 def login():
     # clearing previous sessions
     session.clear()
