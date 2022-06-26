@@ -1,0 +1,3 @@
+when typing in register form, after type check validity using js::: rather than after validation::::: after validation still available
+
+create visualization for register and login pages

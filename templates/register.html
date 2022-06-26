@@ -5,15 +5,25 @@
 {% endblock %}
 
 {% block main %}
+    <img src="static/logo.png" style="width: 200px;" class=mb-3>
     <form action="/register" method="post">
         <div class="mb-3">
             <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
         </div>
         <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="email" name="email" placeholder="Email" type="email">
+        </div>
+        <div class="mb-3">
             <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
         </div>
         <div class="mb-3">
-            <input class="form-control mx-auto w-auto" id="password" name="confirmation" placeholder="Confirm Password" type="password">
+            <input class="form-control mx-auto w-auto" id="cm_password" name="confirmation" placeholder="Confirm Password" type="password">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="phoneNum" maxlength="15" name="tele_num" placeholder="Mobile Number" type="text">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="address" name="address" placeholder="Address" type="text">
         </div>
         <button class="btn btn-primary" type="submit">Sign In</button>
     </form>
