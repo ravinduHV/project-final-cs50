@@ -1,4 +1,4 @@
-from flask import Flask, flask, redirect, request, render_templates, session
+from flask import Flask, redirect, request, render_template, session
 from flask_session import Session
 from cs50 import SQL
 
@@ -32,10 +32,12 @@ def after_request(response):
 def index():
     # font page(main)
     # display new feed
-
+    return render_template("index.html")
+    
 
 @app.route("/login", methods=["POST","GET"])
 def login():
+    """Log user in"""
     # clearing previous sessions
     session.clear()
 
